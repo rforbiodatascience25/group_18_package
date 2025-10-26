@@ -1,0 +1,33 @@
+Package: molecularr
+Type: Package
+Title: Reversed Molecular Biology
+Version: 0.1.0
+Authors@R:
+  c(person(given = "Kacper",
+           family = "Maciejewski",
+           role = "cre",
+           email = "s243548@dtu.dk"), 
+    person(given = "Sofia",
+           family = "Russo",
+           role = "aut",
+           email = "s252054@dtu.dk"),
+    person(given = "Aleksandra ",
+           family = "Wozniak",
+           role = "aut",
+           email = "s253713@dtu.dk"),
+    person(given = "Gabriel",
+           family = "Loayza",
+           role = "aut",
+           email = "s252608@dtu.dk"),
+    person(given = "Dagmar",
+           family = "Geevers",
+           role = "aut",
+           email = "s252256@dtu.dk"))
+Description: Replicate The Central Dogma of Molecular Biology
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
