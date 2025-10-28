@@ -17,3 +17,23 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(molecularr)
 ```
+
+why is it a good idea to limit the number of dependencies your package has. When can’t it always be avoided?:
+
+1\. More stable Fewer external packages means fewer chances of breakage when upstream packages change or are removed.
+
+2\. Faster to install Users (and CRAN) appreciate packages that install quickly without pulling in dozens of others.
+
+3\. Easier to maintain You reduce the risk of version conflicts and simplify debugging when something goes wrong.
+
+4\. More portable Lightweight packages are easier to use in constrained environments (e.g., servers, Docker containers, CI pipelines).
+
+5\. CRAN-friendly CRAN reviewers often flag excessive dependencies, especially if they’re only used for minor tasks. can't avoid dependencies when:.....
+
+1\. Core functionality If your package relies heavily on another (e.g., ggplot2 for plotting, dplyr for data wrangling), importing it is justified.
+
+2\. Avoiding reinventing the wheel Rewriting well-tested functions (like str_split or geom_col) is inefficient and error-prone.
+
+3\. Interoperability If your package is meant to work with others (e.g., extending tidymodels or Bioconductor tools), dependencies are expected.
+
+4\. Performance or reliability Some packages offer optimized, battle-tested solutions that outperform custom code
