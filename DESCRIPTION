@@ -29,6 +29,7 @@ Encoding: UTF-8
 LazyData: true
 Suggests: 
     knitr,
+    rmarkdown,
     rmarkdown
     rmarkdown,
     testthat (>= 3.0.0)

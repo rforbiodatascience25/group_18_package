@@ -1,0 +1,19 @@
+---
+title: "group_18_package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{group_18_package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(molecularr)
+```
