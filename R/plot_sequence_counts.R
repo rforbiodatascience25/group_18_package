@@ -18,7 +18,7 @@ plot_sequence_counts <- function(sequence_string){
     as.data.frame()
 
   colnames(counts) <- c("Counts")
-  counts[["sequence_string"]] <- rownames(counts)
+  counts[["Sequence_string"]] <- rownames(counts)
 
   sequence_plot <- counts |>
     ggplot2::ggplot(ggplot2::aes(x = sequence_string, y = Counts, fill = sequence_string)) +
