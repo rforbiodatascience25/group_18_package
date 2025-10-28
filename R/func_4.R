@@ -7,7 +7,7 @@
 
 func_4 <- function(codons) {
   # Replace 'codon_table' with the name of your codon table object if different
-  name_me2 <- paste0(codon_table[codons], collapse = '')
-  return(name_me2)
+  amino_acid <- paste0(codon_table[codons], collapse = '')
+  return(amino_acid)
 }
 
